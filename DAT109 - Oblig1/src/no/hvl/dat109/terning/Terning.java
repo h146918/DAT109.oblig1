@@ -12,22 +12,14 @@ public class Terning {
 	private int sum;
 	
 	/**
-	 * Oppretter en terning med en tilfeldig verdi mellom 1 og 6 
+	 * 
+	 * @return sum retunerer en Integer med verdi mellom 1 og 6
 	 */
-	public Terning () {
+	public int trill() {
 		this.sum = (int)(Math.random()*5)+1;
-	}
-
-	
-	public int getSum() {
 		return sum;
 	}
 
-	public void setSum(int sum) {
-		this.sum = sum;
-	}
-
-	
 	
 	
 }
