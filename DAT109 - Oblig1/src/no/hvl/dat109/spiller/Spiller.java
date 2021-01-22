@@ -48,7 +48,7 @@ public class Spiller {
 
 	public void flytt() {
 
-		System.out.print(" og har flyttet brikken sin til plass " + this.brikke.getRute() + "!");
+		System.out.print(" og har flyttet brikken sin til plass " + this.brikke.getRute().getRutenr() + "!");
 		System.out.println();
 
 	}

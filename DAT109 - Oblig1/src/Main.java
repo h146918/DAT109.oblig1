@@ -8,10 +8,12 @@ public class Main {
 		
 		Spiller s1 = new Spiller("Fredrik");
 		
-		s1.trill();
-		s1.flytt();
-		
-		System.out.println(s1.getBrikke());
+		for(int i = 0; i < 100; i++) {
+			s1.trill();
+			s1.flytt();
+			
+			
+		}
 	
 
 	}

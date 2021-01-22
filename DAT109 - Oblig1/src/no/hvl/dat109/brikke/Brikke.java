@@ -10,6 +10,7 @@ public class Brikke {
 	public Brikke(String navn) {
 
 		this.navn = navn;
+		this.rute = new Rute(1);
 
 	}
 
