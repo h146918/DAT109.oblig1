@@ -10,23 +10,14 @@ import no.hvl.dat109.terning.Terning;
 public class Brett {
 
 	private Terning terning = new Terning();
-	private List<Spiller> spillere = new ArrayList<Spiller>() ;
-	
-	
-	
+	private List<Spiller> spillere = new ArrayList<Spiller>();
+
 	public void leggTilSpiller(Spiller spiller) {
-		
+
 		spillere.add(spiller);
 	}
 	
 	
 	
-	
 
-	
-
-	
-	
-	
-	
 }
