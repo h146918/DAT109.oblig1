@@ -6,15 +6,13 @@ import no.hvl.dat109.terning.Terning;
 public class Spiller {
 
 	private String navn;
-	private Brikke brikke;
-	private Terning terning;
+	private Brikke brikke = new Brikke();
+	private Terning terning = new Terning();
 
 	public Spiller(String navn) {
 		this.navn = navn;
-		this.brikke = new Brikke(navn);
-		this.terning = new Terning();
-
 	}
+
 
 	public String getNavn() {
 		return navn;
@@ -40,17 +38,6 @@ public class Spiller {
 		this.navn = navn;
 	}
 
-	public void trill() {
-		int terningkast = terning.trill();
-		this.brikke.oppdaterRute(terningkast);
-		System.out.print(this.getNavn() + " fikk terningkast " + terningkast);
-	}
 
-	public void flytt() {
-
-		System.out.print(" og har flyttet brikken sin til plass " + this.brikke.getRute().getRutenr() + "!");
-		System.out.println();
-
-	}
 
 }

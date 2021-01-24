@@ -10,6 +10,8 @@ public class Rute {
 
 	}
 
+	
+	
 	public int getRutenr() {
 		return rutenr;
 	}
