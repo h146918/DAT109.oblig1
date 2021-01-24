@@ -6,15 +6,10 @@ import no.hvl.dat109.terning.Terning;
 
 public class Main {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws InterruptedException {
 
 		Spill spill = new Spill();
-		spill.antallSpillere();
-		
-		spill.getBrett().skrivUtSpillere();
-		spill.antallSpillere();
-		//spill.getBrett().skrivUtSpillere();
+		spill.startSpill();
 
 	}
-
 }

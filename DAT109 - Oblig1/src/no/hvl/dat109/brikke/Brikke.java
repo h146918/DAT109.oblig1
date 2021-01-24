@@ -8,18 +8,24 @@ public class Brikke {
 	}
 
 	private int plass;
-	
+
 	public Brikke() {
 		this.plass = 1;
 	}
 
-
-	public int getRute() {
+	public int getPlass() {
 		return plass;
 	}
 
-	public void setRute(int plass) {
+	public void setPlass(int plass) {
 		this.plass = plass;
+	}
+
+	public int oppdaterPlass(int terningKast) {
+
+		this.plass = plass + terningKast;
+		return this.plass;
+
 	}
 
 }

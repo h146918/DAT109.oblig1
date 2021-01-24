@@ -8,26 +8,38 @@ import no.hvl.dat109.spiller.Spiller;
 
 public class Spill {
 
-	private final int MAKS_SPILLER = 2;
+	private final int MAKS_SPILLER = 4;
 	Brett brett = new Brett();
 
 	public void antallSpillere() {
-		
+
 		Scanner scanner = new Scanner(System.in);
-		
-		for (int i = 0; i < MAKS_SPILLER; i++) {
+		System.out.println("Skriv inn antall spillere");
+		int onskedeSpillere = scanner.nextInt();
 
-			System.out.println("Skriv inn Spillernavn");
-			
-			String spillerNavn = scanner.nextLine();
-			Brikke brikke = new Brikke();
-			Spiller spiller = new Spiller(spillerNavn, brikke);
-			brett.leggTilSpiller(spiller);
-			
+		if (onskedeSpillere <= MAKS_SPILLER) {
 
+			for (int i = 0; i < onskedeSpillere; i++) {
+
+				System.out.println("Skriv inn Spillernavn");
+
+				String spillerNavn = scanner.next();
+				Brikke brikke = new Brikke();
+				Spiller spiller = new Spiller(spillerNavn, brikke);
+				brett.leggTilSpiller(spiller);
+
+			}
+
+			scanner.close();
 		}
-		
-		scanner.close();
+	}
+
+	public void startSpill() throws InterruptedException {
+
+		antallSpillere();
+
+		brett.trillOgFlyttOppdater();
+
 	}
 
 	public Brett getBrett() {
@@ -37,7 +49,5 @@ public class Spill {
 	public void setBrett(Brett brett) {
 		this.brett = brett;
 	}
-	
-	
 
 }
