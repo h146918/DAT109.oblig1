@@ -10,6 +10,10 @@ public class Main {
 
 		Spill spill = new Spill();
 		spill.startSpill();
+		
+		// kommentar fra pål ang beta 
+		
+		
 
 	}
 }
