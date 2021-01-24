@@ -17,6 +17,11 @@ public class Brett {
 		spillere.add(spiller);
 	}
 	
+	public void skrivUtSpillere() {
+		for(Spiller s: spillere) {
+			System.out.println(s.toString());
+		}
+	}
 	
 	
 

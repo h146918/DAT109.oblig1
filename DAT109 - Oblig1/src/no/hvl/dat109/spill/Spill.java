@@ -8,23 +8,36 @@ import no.hvl.dat109.spiller.Spiller;
 
 public class Spill {
 
-	private final int MAKS_SPILLER = 4;
+	private final int MAKS_SPILLER = 2;
 	Brett brett = new Brett();
 
 	public void antallSpillere() {
-
+		
+		Scanner scanner = new Scanner(System.in);
+		
 		for (int i = 0; i < MAKS_SPILLER; i++) {
 
 			System.out.println("Skriv inn Spillernavn");
-			Scanner scanner = new Scanner(System.in);
+			
 			String spillerNavn = scanner.nextLine();
 			Brikke brikke = new Brikke();
 			Spiller spiller = new Spiller(spillerNavn, brikke);
 			brett.leggTilSpiller(spiller);
-			scanner.close();
+			
 
 		}
-
+		
+		scanner.close();
 	}
+
+	public Brett getBrett() {
+		return brett;
+	}
+
+	public void setBrett(Brett brett) {
+		this.brett = brett;
+	}
+	
+	
 
 }

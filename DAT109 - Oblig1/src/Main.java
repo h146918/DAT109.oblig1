@@ -10,6 +10,10 @@ public class Main {
 
 		Spill spill = new Spill();
 		spill.antallSpillere();
+		
+		spill.getBrett().skrivUtSpillere();
+		spill.antallSpillere();
+		//spill.getBrett().skrivUtSpillere();
 
 	}
 
