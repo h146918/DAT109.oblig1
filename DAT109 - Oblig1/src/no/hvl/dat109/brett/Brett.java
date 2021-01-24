@@ -1,30 +1,32 @@
 package no.hvl.dat109.brett;
 
-import no.hvl.dat109.rute.Rute;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
+import no.hvl.dat109.spiller.Spiller;
+import no.hvl.dat109.terning.Terning;
 
 public class Brett {
 
-	private Rute[] ruter = new Rute[101];
+	private Terning terning = new Terning();
+	private List<Spiller> spillere = new ArrayList<Spiller>() ;
 	
-	public Brett() {
+	
+	
+	public void leggTilSpiller(Spiller spiller) {
 		
-		for(int i = 1; i <= 100; i++) {
-			
-			ruter[i] = new Rute(i);
-			
-		}
-		
+		spillere.add(spiller);
 	}
 	
-	public void skrivUtRuter() {
-		
-		for(int i = 1; i <= 100; i++) {
-			
-			System.out.println(ruter[i].getRutenr());
-			
-		}
-		
-		
-	}
+	
+	
+	
+
+	
+
+	
+	
+	
 	
 }

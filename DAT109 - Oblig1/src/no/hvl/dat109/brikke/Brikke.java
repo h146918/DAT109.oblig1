@@ -1,18 +1,25 @@
 package no.hvl.dat109.brikke;
 
-import no.hvl.dat109.rute.Rute;
-
 public class Brikke {
 
-	private Rute rute;
-
-
-	public Rute getRute() {
-		return rute;
+	@Override
+	public String toString() {
+		return "Brikke [plass=" + plass + "]";
 	}
 
-	public void setRute(Rute rute) {
-		this.rute = rute;
+	private int plass;
+	
+	public Brikke() {
+		this.plass = 1;
+	}
+
+
+	public int getRute() {
+		return plass;
+	}
+
+	public void setRute(int plass) {
+		this.plass = plass;
 	}
 
 }
