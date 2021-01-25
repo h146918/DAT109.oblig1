@@ -30,7 +30,9 @@ public class Brett {
 	// Endre senere
 	public void trillOgFlyttOppdater() throws InterruptedException {
 		boolean vunnet = false;
+		int runde = 1;
 		while (!vunnet) {
+			
 			for (Spiller s : spillere) {
 
 				int terningKast = terning.trill();
@@ -86,7 +88,8 @@ public class Brett {
 				}
 
 				System.out.println();
-				// Thread.sleep(5000);
+				 Thread.sleep(5000);
+				runde++;
 			}
 
 		}
