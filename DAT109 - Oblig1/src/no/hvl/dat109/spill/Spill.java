@@ -1,16 +1,24 @@
 package no.hvl.dat109.spill;
 
 import java.util.Scanner;
-
 import no.hvl.dat109.brett.Brett;
 import no.hvl.dat109.brikke.Brikke;
 import no.hvl.dat109.spiller.Spiller;
 
+/**
+ * Klasse som oppretter et spill
+ * 
+ * @author Gruppe44
+ *
+ */
 public class Spill {
 
 	private final int MAKS_SPILLER = 4;
 	Brett brett = new Brett();
 
+	/**
+	 * Metode som tar inn antall spillere og navn fra console
+	 */
 	public void antallSpillere() {
 
 		Scanner scanner = new Scanner(System.in);
@@ -34,6 +42,10 @@ public class Spill {
 		}
 	}
 
+	/**
+	 * Metode som starter antallSpillere og *****
+	 * @throws InterruptedException
+	 */
 	public void startSpill() throws InterruptedException {
 
 		antallSpillere();

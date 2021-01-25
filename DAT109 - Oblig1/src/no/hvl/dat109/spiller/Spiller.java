@@ -1,9 +1,13 @@
 package no.hvl.dat109.spiller;
 
-import no.hvl.dat109.brett.Brett;
 import no.hvl.dat109.brikke.Brikke;
-import no.hvl.dat109.terning.Terning;
 
+/**
+ * Klasse som oppretter en spiller
+ * 
+ * @author Gruppe44
+ *
+ */
 public class Spiller {
 
 	private String navn;
@@ -30,9 +34,5 @@ public class Spiller {
 		this.brikke = brikke;
 	}
 
-	@Override
-	public String toString() {
-		return "Spiller [navn=" + navn + ", brikke=" + brikke + "]";
-	}
 
 }

@@ -1,10 +1,9 @@
 package no.hvl.dat109.terning;
 
 /**
- * Terning klassen representerer en terning som kastes av en spiller
- * Retunerer et tall mellom 1 og 6
+ * Klasse som oppretter en terning
  *  
- * @author gruppe_44
+ * @author Gruppe44
  *
  */
 public class Terning {
@@ -12,8 +11,9 @@ public class Terning {
 	private int sum;
 	
 	/**
+	 * Metode som triller en terning
 	 * 
-	 * @return sum retunerer en Integer med verdi mellom 1 og 6
+	 * @return sum 
 	 */
 	public int trill() {
 		this.sum = (int)(Math.random()*5)+1;
