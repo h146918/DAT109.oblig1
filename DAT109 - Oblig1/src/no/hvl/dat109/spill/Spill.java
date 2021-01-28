@@ -50,16 +50,16 @@ public class Spill {
 
 		antallSpillere();
 
-		brett.trillOgFlyttOppdater();
+		brett.runde();
 
 	}
 
-	public Brett getBrett() {
-		return brett;
-	}
-
-	public void setBrett(Brett brett) {
-		this.brett = brett;
-	}
+//	public Brett getBrett() {
+//		return brett;
+//	}
+//
+//	public void setBrett(Brett brett) {
+//		this.brett = brett;
+//	}
 
 }

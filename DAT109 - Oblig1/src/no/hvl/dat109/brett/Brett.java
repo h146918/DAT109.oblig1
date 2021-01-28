@@ -28,7 +28,7 @@ public class Brett {
 	}
 
 	// Endre senere
-	public void trillOgFlyttOppdater() throws InterruptedException {
+	public void runde() throws InterruptedException {
 		boolean vunnet = false;
 		int runde = 1;
 		while (!vunnet) {

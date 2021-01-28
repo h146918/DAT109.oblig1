@@ -22,9 +22,9 @@ public class Spiller {
 		return navn;
 	}
 
-	public void setNavn(String navn) {
-		this.navn = navn;
-	}
+//	public void setNavn(String navn) {
+//		this.navn = navn;
+//	}
 
 	public Brikke getBrikke() {
 		return brikke;
