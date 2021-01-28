@@ -14,8 +14,23 @@ import no.hvl.dat109.spiller.Spiller;
 public class Spill {
 
 	private final int MAKS_SPILLER = 4;
-	Brett brett = new Brett();
+	private Brett brett = new Brett();
 
+	
+	/**
+	 * Metode som starter antallSpillere og *****
+	 * @throws InterruptedException
+	 */
+	public void startSpill() throws InterruptedException {
+
+		antallSpillere();
+
+		brett.runde();
+
+	}
+	
+	
+	
 	/**
 	 * Metode som tar inn antall spillere og navn fra console
 	 */
@@ -42,24 +57,8 @@ public class Spill {
 		}
 	}
 
-	/**
-	 * Metode som starter antallSpillere og *****
-	 * @throws InterruptedException
-	 */
-	public void startSpill() throws InterruptedException {
+	
 
-		antallSpillere();
 
-		brett.runde();
-
-	}
-
-//	public Brett getBrett() {
-//		return brett;
-//	}
-//
-//	public void setBrett(Brett brett) {
-//		this.brett = brett;
-//	}
 
 }
