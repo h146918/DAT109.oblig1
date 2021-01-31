@@ -27,7 +27,11 @@ public class Brett {
 		spillere.add(spiller);
 	}
 
-	// Endre senere
+	/**
+	 * Metode som spiller en runde for alle spillere og gir tilbakemelding om ny plass, fortsetter til en spiller har vunnet 
+	 * 
+	 * @throws InterruptedException
+	 */
 	public void runde() throws InterruptedException {
 		boolean vunnet = false;
 		int runde = 1;
