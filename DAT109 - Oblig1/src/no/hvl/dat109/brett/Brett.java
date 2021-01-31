@@ -36,7 +36,7 @@ public class Brett {
 		boolean vunnet = false;
 		int runde = 1;
 		System.out.println();
-		System.out.println("Bruke vedlagt bilde av terningspill for best spillopplevelse");
+		System.out.println("Bruk vedlagt bilde av terningspill for best spillopplevelse");
 		System.out.println();
 		while (!vunnet) {
 			
@@ -92,7 +92,7 @@ public class Brett {
 				
 
 				System.out.println();
-			//	Thread.sleep(5000);
+				Thread.sleep(5000);
 				
 			}
 			runde++;
