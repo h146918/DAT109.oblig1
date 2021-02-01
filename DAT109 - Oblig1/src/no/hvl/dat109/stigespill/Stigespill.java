@@ -1,3 +1,4 @@
+package no.hvl.dat109.stigespill;
 
 import no.hvl.dat109.spill.Spill;
 
