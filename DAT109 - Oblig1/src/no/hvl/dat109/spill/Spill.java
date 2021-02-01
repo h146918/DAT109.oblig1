@@ -18,7 +18,7 @@ public class Spill {
 
 	
 	/**
-	 * Metode som starter antallSpillere og *****
+	 * Metode som starter et spill
 	 * @throws InterruptedException
 	 */
 	public void startSpill() throws InterruptedException {

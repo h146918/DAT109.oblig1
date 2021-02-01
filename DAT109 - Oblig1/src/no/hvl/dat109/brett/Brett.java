@@ -48,8 +48,6 @@ public class Brett {
 				System.out.println("Triller terningen og får " + terningKast);
 				switch (s.getBrikke().oppdaterPlass(terningKast)) {
 
-				// slange = 37 -> 20, 70->32, 99 -> 64
-				// stige = 27 -> 46, -> 42 -> 62, 66 ->88
 
 				case 37:
 					System.out.println("Flytter til plass 37, men der var det en slange og " + s.getNavn() + " sklir ned til plass 20 ");

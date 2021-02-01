@@ -11,6 +11,13 @@ import no.hvl.dat109.brikke.Brikke;
 import no.hvl.dat109.spiller.Spiller;
 import no.hvl.dat109.terning.Terning;
 
+
+/**
+ * Test klasse
+ * 
+ * @author Gruppe44
+ *
+ */
 public class JUnitTest {
 
 	Brikke brikke = new Brikke();
